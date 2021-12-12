@@ -13,6 +13,6 @@ Choose mode and other settings in the menu. Wait till the end of script.
 
 **3. TODO**
 
-Validation
-More settings
-Use multithreading
+Validation.
+More settings.
+Use multithreading.
