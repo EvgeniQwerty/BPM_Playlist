@@ -12,6 +12,7 @@ Open the script using python 3. Connection to your spotify app will pass in the 
 Choose mode and other settings in the menu. Wait till the end of script.
 
 **3. TODO**
+
 Validation
 More settings
 Use multithreading
