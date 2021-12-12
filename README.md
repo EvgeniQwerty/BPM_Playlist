@@ -8,7 +8,8 @@ If you are developer (not user), change the constants SPOTIPY_CLIENT_ID, SPOTIPY
 
 **2. Using the script**
 
-Open the script using python 3. Connection to your spotify app will pass in the first run. Script dont save your data, only token.
+If you don't have Python 3 installed - do it :)
+Open the script using python. Connection to your spotify app will pass in the first run. Script dont save your data, only token.
 Choose mode and other settings in the menu. Wait till the end of script.
 
 **3. TODO**
@@ -16,3 +17,4 @@ Choose mode and other settings in the menu. Wait till the end of script.
 Validation.
 More settings.
 Use multithreading.
+Tutorial for users.
