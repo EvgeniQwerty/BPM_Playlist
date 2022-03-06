@@ -37,8 +37,8 @@ def readParams():
     
 
 def spotifyAuth(username):
-    SPOTIPY_CLIENT_ID='8b24bce7bc9f436d8c7d844f43fb1d34' #id from developer.spotify.com
-    SPOTIPY_CLIENT_SECRET='2d298c5b33f74879ac4d106b416e5254' #secret from developer.spotify.com
+    SPOTIPY_CLIENT_ID='YOUR CLIENT ID' #id from developer.spotify.com
+    SPOTIPY_CLIENT_SECRET='YOUR SECRET' #secret from developer.spotify.com
     SPOTIPY_REDIRECT_URI = 'https://open.spotify.com/' #uri from developer.spotify.com
     scope = 'user-library-read playlist-modify-public playlist-read-private'
 
