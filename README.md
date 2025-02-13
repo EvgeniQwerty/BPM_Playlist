@@ -1,20 +1,50 @@
-# BPM_Playlist
+# Spotify BPM Playlist Creator (Not Working)
 
-**1. Before use**
+**IMPORTANT:** This script no longer functions as intended because Spotify has restricted access to certain API endpoints. Read more about the changes here: [Spotify API Restrictions](https://developer.spotify.com/community/news/2024/02/spotify-api-changes/).
 
-Before use, you need to know your spotify username (https://www.spotify.com/us/account/overview/?utm_source=spotify&utm_medium=menu&utm_campaign=your_account)
-Fill the settings.ini with your username and other settings.
-If you are developer (not user), change the constants SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, SPOTIPY_REDIRECT_URI in the function spotifyAuth
+## Overview
+This Python script allows users to create a Spotify playlist based on a specified BPM (beats per minute) range. It gathers tracks from the user's liked songs, saved playlists, and liked albums, filters them by BPM, and compiles them into a new playlist.
 
-**2. Using the script**
+## Features
+- Authenticate with Spotify API
+- Fetch songs from liked tracks, saved playlists, and albums
+- Filter songs based on BPM, energy, and danceability
+- Create a new Spotify playlist with the selected tracks
 
-If you don't have Python 3 installed - do it :)
-Open the script using python. Connection to your spotify app will pass in the first run. Script dont save your data, only token.
-Choose mode and other settings in the menu. Wait till the end of script.
+## Requirements
+- Python 3.7+
+- A Spotify Developer account with API credentials
+- Spotipy library
+- dotenv library
 
-**3. TODO**
+## Installation
+1. Clone this repository:
+   ```sh
+   git clone https://github.com/EvgeniQwerty/BPM_Playlist.git
+   cd BPM_Playlist
+   ```
+2. Install dependencies:
+   ```sh
+   pip install spotipy dotenv
+   ```
+3. Create a `.env` file in the project directory and add your Spotify credentials:
+   ```sh
+   SP_CLIENT_ID=your_client_id
+   SP_CLIENT_SECRET=your_client_secret
+   SP_REDIRECT_URI=https://open.spotify.com/
+   SP_USERNAME=your_spotify_username
+   ```
 
-Validation.
-More settings.
-Use multithreading.
-Tutorial for users.
+## Usage
+Run the script and follow the prompts:
+```sh
+python main.py
+```
+You can also specify arguments:
+```sh
+python generate_playlist.py --bpm 120
+python generate_playlist.py --bpm-range 100 130 --use-albums --use-playlists --use-liked
+```
+
+## Known Issues
+- Due to recent Spotify API changes, access to certain user data is now restricted, leading to authentication and track-fetching failures.

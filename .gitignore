@@ -1,0 +1,25 @@
+# Операционные системы
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Виртуальные окружения
+venv/
+.env
+*.env
+
+# Логи и кэш
+*.log
+.cache
+.cache-*
+
+# IDE и редакторы
+.vscode/
+.idea/
+*.iml
